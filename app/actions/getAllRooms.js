@@ -16,7 +16,7 @@ async function getAllRooms() {
 
     // Revalidate the cache for this path
     revalidatePath('/', 'layout');
-
+    console.log('We get rooms', rooms, databases);
     return rooms;
   } catch (error) {
     console.log('Failed to get rooms', error);
